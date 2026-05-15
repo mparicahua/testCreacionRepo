@@ -1,4 +1,5 @@
 # testCreacionRepo
 Clase de base de datos
-# testCreacionRepo
+# Nombres
 Nombre: Mharco Paricahua
+Nombre: Paolo Lovon Orozco
