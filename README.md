@@ -1,7 +1,7 @@
 # testCreacionRepo
 Clase de base de datos
 # NOMBRES:
-Nombre: Mharco Paricahua
-Nombre: Paolo Lovon
-Nombre: Fernando Flores
-Nombre: Arturo Benavente
+Nombre: Mharco Paricahua </br>
+Nombre: Paolo Lovon </br>
+Nombre: Fernando Flores </br>
+Nombre: Arturo Benavente 
