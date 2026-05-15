@@ -1,4 +1,5 @@
 # testCreacionRepo
 Clase de base de datos
-# testCreacionRepo
+# NOMBRES:
 Nombre: Mharco Paricahua
+Nombre: Paolo Lovon
