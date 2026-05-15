@@ -4,3 +4,4 @@ Clase de base de datos
 Nombre: Mharco Paricahua
 Nombre: Paolo Lovon
 Nombre: Fernando Flores
+Nombre: Arturo Benavente
