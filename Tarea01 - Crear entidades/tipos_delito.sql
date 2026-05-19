@@ -6,4 +6,7 @@ CREATE TABLE "tipos_delito" (
   "descripcion" text,
   "gravedad" varchar(20),
   "activo" boolean DEFAULT true
+
+    FOREIGN KEY (categoria_id)
+    REFERENCES categorias_delito(id)
 );

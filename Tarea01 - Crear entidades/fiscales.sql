@@ -6,4 +6,7 @@ CREATE TABLE "fiscales" (
   "especialidad" varchar(150),
   "codigo_fiscal" varchar(50) UNIQUE,
   "activo" boolean DEFAULT true
+
+    FOREIGN KEY (distrito_fiscal_id)
+    REFERENCES distritos_fiscales(id)
 );

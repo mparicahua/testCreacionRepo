@@ -6,4 +6,7 @@ CREATE TABLE "funcionarios" (
   "cargo" varchar(150),
   "codigo_empleado" varchar(50) UNIQUE,
   "activo" boolean DEFAULT true
+
+    FOREIGN KEY (distrito_fiscal_id)
+    REFERENCES distritos_fiscales(id)
 );
