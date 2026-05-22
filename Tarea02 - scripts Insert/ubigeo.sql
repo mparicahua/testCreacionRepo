@@ -4,4 +4,4 @@ VALUES
 ('040103','AREQUIPA','AREQUIPA','Arequipa'),
 ('040104','AREQUIPA','AREQUIPA','Alto Selva Alegre'),
 ('040105','AREQUIPA','AREQUIPA','Characato'),
-('040106','AREQUIPA','AREQUIPA','Chiguata')
+('040106','AREQUIPA','AREQUIPA','Chiguata');
