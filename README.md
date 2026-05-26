@@ -1,10 +1,13 @@
 # Tareas de Base de datos
+
 Clase de base de datos
-# NOMBRES:
-Nombre: Mharco Paricahua </br>
-Nombre: Paolo Lovon </br>
-Nombre: Fernando Flores </br>
-Nombre: Arturo Benavente 
+
+# Nombres:
+
+Nombre: Mharco Paricahua (mparicahua)</br>
+Nombre: Paolo Lovon (Lov-Oro)</br>
+Nombre: Fernando Flores (Farox17)</br>
+Nombre: Arturo Benavente (Wirkuf)
 
 # Tablas
 
