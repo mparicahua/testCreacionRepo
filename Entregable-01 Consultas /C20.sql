@@ -1,20 +1,17 @@
 SELECT 
-    u.departamento,
-    u.provincia,
-    u.distrito,
-    
-    
-    COUNT(d.id_denuncia) AS total_denuncias
+    U.departamento,
+    U.provincia,
+    U.distrito,
+    COUNT(D.id) AS total_denuncias
 
-FROM Denuncias d
-INNER JOIN ubigeo u ON d.id_ubigeo = u.id
+FROM Denuncias D
+INNER JOIN ubigeo U ON D.ubigeo_id = U.id
 
-WHERE 
-    d.fecha_registro BETWEEN :fecha_inicio AND :fecha_fin
+WHERE 1= 1
+ -- Filtro con respecto a fechas:
+ -- AND D.fecha_hecho >= '2026-01-01'
+ -- AND D.fecha_hehco <= '2026-12-31'
 
-
-GROUP BY u.id, u.departamento, u.provincia, u.distrito
-HAVING COUNT(d.id_denuncia) > :N_denuncias
-
-
+GROUP BY U.id, U.departamento, U.provincia, U.distrito
+HAVING COUNT(D.id) < 5
 ORDER BY total_denuncias DESC;
