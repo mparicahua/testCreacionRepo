@@ -10,6 +10,6 @@ SELECT
     INNER JOIN fiscales F ON A.fiscal_id = F.id
     INNER JOIN personas P ON F.persona_id = P.id
 
-    WHERE A.denuncia_id = :id_denuncia
+    WHERE A.denuncia_id = 2
 
     ORDER BY A.fecha_hora ASC; 
