@@ -1,15 +1,11 @@
 SELECT 
-    A.fecha_hora AS "Fecha",
-    A.tipo AS "Tipo",
-    A.lugar AS "Lugar",
-    A.estado AS "Estado",
-    P.nombres ||' '|| P.apellidos AS "Nombre del fiscal",
-    A.acta AS "Acta resumida"
-
-    FROM audiencias A
-    INNER JOIN fiscales F ON A.fiscal_id = F.id
-    INNER JOIN personas P ON F.persona_id = P.id
-
-    WHERE A.denuncia_id = 2
-
-    ORDER BY A.fecha_hora ASC; 
+    TD.nombre AS "Nombre del tipo de delito",
+    CD.nombre AS "Categoría",
+    COUNT(D.id) AS "Total de denuncias",
+    ROUND((COUNT(D.id) * 100.0) / (SELECT COUNT(*) FROM denuncias), 2) AS "Porcentaje del total"
+FROM denuncias D
+INNER JOIN tipos_delito TD ON D.tipo_delito_id = TD.id
+INNER JOIN categorias_delito CD ON TD.categoria_id = CD.id
+GROUP BY TD.id, TD.nombre, CD.nombre
+HAVING COUNT(D.id) > 0
+ORDER BY "Total de denuncias" DESC;
